@@ -1,15 +1,12 @@
 # workshopCESAR
-Codes for Arduino Workshop on CESAR
+Códigos para o Workshop de Introdução ao Arduino no CESAR
 
+Os códigos dos referentes módulos podem ser explicados a seguir:
 
- Estes codigos sao para o Workshop de Introducao a Arduino no @CESAR.
- 
- Os codigos dos referentes modulos podem ser explicados a seguir:
- 
- - button_led : codigo destinado a acender LED quando botao digital pressionado
- - modulo_7seg: modulo display de sete segmentos com contador
- - modulo_buzzer: modulo com buzzer + LED
- - modulo_robot: modulo first robot, com LEDs
- - modulo_tempo: modulo sensor de tempreatura
- 
+- button_led : código destinado a acender LED quando um botão digital é pressionado
+- modulo_7seg: módulo display de sete segmentos com contador
+- modulo_buzzer: módulo com buzzer + LED
+- modulo_robot: módulo first robot, com LEDs
+- modulo_tempo: módulo sensor de tempreatura
+
  
