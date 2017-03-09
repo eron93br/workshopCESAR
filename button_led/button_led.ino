@@ -1,33 +1,35 @@
+/*
+ * WORKSHOP INTRODUCAO A ARDUINO @CESARBR -- 09/03/2017
+ * @ErickSimoes @eron93br
+ * Código para o módulo LED com Botão
+ */
 
-// WORKSHOP INTRODUCAO A ARDUINO  @CESAR -- 09/03/2017
-// CODIGO PARA O MODULO LED COM BOTAO!
+// variaveis que não mudam:
+const int botaoPin = 2;	// Pino do pushbutton, botão
+const int ledPin =  13;	// Pino de LED
 
-
-
-const int buttonPin = 2;     //  Numero do pino de pushbutton, botao!
-const int ledPin =  13;      //  numero do pino de LED
-
-// variables will change:
-int buttonState = 0;         // variable for reading the pushbutton status
+// variaveis que mudam:
+int estadoBotao = 0;	// variável para ler o estado do botão
 
 void setup() {
-  // initialize the LED pin as an output:
+  // inicializa o pino do LED como saída
   pinMode(ledPin, OUTPUT);
-  // initialize the pushbutton pin as an input:
-  pinMode(buttonPin, INPUT);
+  // inicializa o pino do botão como entrada
+  pinMode(botaoPin, INPUT);
 }
 
 void loop() {
-  // read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin);
+  // ler o estado do botão
+  estadoBotao = digitalRead(botaoPin);
 
-  // check if the pushbutton is pressed.
-  // if it is, the buttonState is HIGH:
-  if (buttonState == HIGH) {
-    // turn LED on:
+  // se o botão estiver pressionado a LED é acesa
+  // Se não, é apagada
+  if (estadoBotao == HIGH) {
+    // ligar a LED
     digitalWrite(ledPin, HIGH);
   } else {
-    // turn LED off:
+    // desligar a LED
     digitalWrite(ledPin, LOW);
   }
 }
+
